@@ -24207,3 +24207,29 @@ Served asset /users.js - 200 OK (2ms)
 
 Started GET "/assets/welcome.js?body=1" for 192.168.1.16 at 2013-10-31 18:38:56 +0530
 Served asset /welcome.js - 200 OK (22ms)
+Connecting to database specified by database.yml
+  [1m[36m (4.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20131003142840)
+Migrating to AddRoleToUsers (20131003145426)
+Migrating to CreateSports (20131008131649)
+Migrating to CreatePositions (20131008133635)
+Migrating to CreateStates (20131008133643)
+Migrating to CreateColleges (20131008133648)
+Migrating to AddFieldsToUsers (20131008141738)
+Migrating to AddNameToUsers (20131010055621)
+Migrating to CreateRoles (20131010060606)
+Migrating to AddRoleIdToUsers (20131010060707)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20131003142840)
+Migrating to AddRoleToUsers (20131003145426)
+Migrating to CreateSports (20131008131649)
+Migrating to CreatePositions (20131008133635)
+Migrating to CreateStates (20131008133643)
+Migrating to CreateColleges (20131008133648)
+Migrating to AddFieldsToUsers (20131008141738)
+Migrating to AddNameToUsers (20131010055621)
+Migrating to CreateRoles (20131010060606)
+Migrating to AddRoleIdToUsers (20131010060707)
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
