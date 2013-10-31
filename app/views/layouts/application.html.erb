@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webletes</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<div id="wrapper-home">
+<%= render 'layouts/header' %>
+<% if current_user %>
+  <%= render 'layouts/role_selector' %>
+<% end %>
+
+<div class="content">
+  <%= yield %>
+</div>
+<%= render 'layouts/footer' %>
+</div>
+<%= javascript_include_tag "application" %>
+</body>
+</html>

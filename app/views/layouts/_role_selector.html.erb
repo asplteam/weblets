@@ -1,0 +1,29 @@
+<div id="webletes-role-container">
+  <section class="webletes-role-container-inner">
+    <h1>I am a:</h1> 
+    <ul>
+      <li>
+      <%if current_user.role.name == 'Fan'%>
+		<%= link_to '',  '#', id: 'selected-fan1', class: "selected-uni selected-fan" %></li>
+      <%else%>
+		<%= link_to '',  '#', id: 'selected-fan', class: "selected-uni" %></li>
+      <%end%>
+      <li>
+		<%if current_user.role.name == 'Athlete'%>
+			<%= link_to '',  '#', id: 'selected-athlete1', class: 'selected-uni selected-athlete' %>
+		<%else%>
+			<%= link_to '',  '#', id: 'selected-athlete', class: 'selected-uni' %>
+		<%end%>
+	  </li>
+      <li>
+		<%if current_user.role.name == 'Coach'%>
+			<%= link_to '',  '#', id: 'selected-coach1', class: 'selected-uni selected-coach' %>
+		<%else%>
+			<%= link_to '',  '#', id: 'selected-coach', class: 'selected-uni' %>
+		<%end%>
+      </li>
+    </ul>
+	<input  type="text" class="top-nav-two-text-box" style="height: 24px;" value="" size="60" />
+	<div class="top-nav-two-search"><%=image_tag('search_btn.jpg')%></div>
+  </section>
+</div>

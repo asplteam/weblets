@@ -1,0 +1,17 @@
+class User < ActiveRecord::Base
+ devise :confirmable,
+       :database_authenticatable,
+       :lockable,
+       :recoverable,
+       :registerable,
+       :rememberable,
+       :timeoutable,
+       :trackable,
+       :validatable
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :role
+
+  as_enum :role, [:administrator, :client, :member]
+  validates_as_enum :role
+end

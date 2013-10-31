@@ -1,0 +1,27 @@
+<header>
+	<div id="header">
+    	<div class="top-nav">
+          <div class="top-logo"></div>
+          <div class="top-twitter"><%=link_to image_tag('twitter.jpg'),"https://twitter.com/Webletes"%></div>
+          <div class="top-facebook"><%=link_to image_tag('facebook.jpg'),"https://www.facebook.com/webletes.recruit"%></div>
+          <div class="top-google"><%=link_to image_tag('google_plus.jpg'),"#"%></div>
+          <div class="top-instagram"><%=link_to image_tag('instagram.jpg'),"http://instagram.com/webletes"%></div>
+          <div class="top-home-tab"><%=link_to image_tag('home_tab.jpg'),"/"%></div>
+          <div class="top-about-tab"><%=link_to image_tag('about_tab.jpg'),"/about"%></div>
+          <div class="top-events-tab"><%=link_to image_tag('event_tab.jpg'),"/event"%></div>
+          <div class="top-contact-tab"><%=link_to image_tag('contact_tab.jpg'),"/contact"%></div>
+
+		<% if user_signed_in? %>
+		  Logged in as <strong><%= current_user.email %></strong>.<br>
+		  <%= link_to image_tag('editpprofile.png',:size=>"120x20"), edit_user_registration_path, :class => 'navbar-link' %> 
+		  <%= link_to image_tag('log_out.png',:size=>"120x20"), destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+		<% else %>
+		   <div class="top-login-btn"><%= link_to image_tag('register.png'),new_user_registration_path, :class => ''  %></div>
+		   <div class="top-login-btn"><%= link_to image_tag('login.png'), new_user_session_path, :class => ''  %></div>
+		<% end %>
+
+		</div>
+	</div>
+	<div class="clear-fix"></div>
+	<%#=current_user.role.name%>
+</header>

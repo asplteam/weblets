@@ -1,0 +1,93 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+
+/* social media icons */
+.social_media_container {
+  padding-top:4px;
+}
+.social_media_icon {
+  opacity:0.5;
+  width:40px;
+  height:40px;
+  &:hover {
+  opacity:1;
+  }
+}
+
+
+/* begin webletes role search bar */
+#webletes-role-container {
+  display:inline-block;
+  background:#ACAAAA;
+  width:100%;
+  height:54px;
+}
+.webletes-role-container-inner {
+  margin:0 auto;
+  width:900px;
+  h1 {
+  float:left;
+  margin-top:6px; 
+  font-size:30px;
+  font-weight:100;
+  color:#FFF;
+  }
+  ul {
+  float:left;
+  li {
+  display:inline;
+  float:left;
+  list-style:none;
+    }
+  }
+}
+.selected-uni {
+  display:inline-block;
+  width:132px;
+  height:54px;
+}
+#selected-fan {
+  background:url("not_selected_fan_tab.jpg") no-repeat center;
+ /* &:hover {
+  background:url("selected_fan_tab.png") center 72px;
+  width:132px;
+  height:72px;
+  }*/
+}
+#selected-athlete {
+  background:url("not_selected_athlete.jpg") no-repeat center;
+  /*&:hover {
+  background:url("selected_athlete.png") center 72px;
+  width:132px;
+  height:72px;
+  }*/
+}
+#selected-coach {
+  background:url("not_selected_coach.jpg") no-repeat center;
+/*  &:hover {
+  background:url("selected_coach.png") center 72px;
+  width:132px;
+  height:72px;
+  }*/
+}
+
+.selected-fan {
+  background:url("selected_fan_tab.png") center 72px;
+  width:132px;
+  height:72px;
+}
+.selected-athlete {
+  background:url("selected_athlete.png") center 72px;
+  width:132px;
+  height:72px;
+}
+.selected-coach {
+  background:url("selected_coach.png") center 72px;
+  width:132px;
+  height:72px;
+}
+
+
+/* end role search bar */
